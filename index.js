@@ -72,23 +72,25 @@ ${colored}
 
 `);
 
-let projectName = await ask(`${colors.cyan}Enter your project name: ${colors.clear}`);
 let createFolder = await ask(`${colors.cyan}Create folder? (${colors.yellow}y${colors.cyan}/${colors.yellow}n${colors.cyan}): ${colors.clear}`);
 createFolder = (createFolder || '').toLowerCase();
 let shouldCreateProjectFolder = createFolder === 'y' || createFolder === 'yes';
 const source = './templates/main'
 let destination = process.cwd();
+let projectName
 if (shouldCreateProjectFolder) {
+  projectName = await ask(`${colors.cyan}Enter your project name: ${colors.clear}`);
   destination = path.join(process.cwd(), projectName);
   await fs.mkdir(destination);
 }
 
 console.log(`\n${colors.grey}Running...${colors.clear}`);
 
-// await cp(source, destination, {
-//   recursive: true,
-//   force: true
-// });
+
+await cp(source, destination, {
+  recursive: true,
+  force: true
+});
 
 console.log(`${colors.greem}\u2714 ${colors.clear}${colors.cyan}Done!${colors.clear}\n`);
 console.log(`Next run${colors.clear}`);
