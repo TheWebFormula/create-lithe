@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { cp } from 'node:fs/promises';
 import { fileURLToPath } from "node:url";
 import path from 'node:path';
