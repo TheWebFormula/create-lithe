@@ -75,7 +75,7 @@ ${colored}
 let createFolder = await ask(`${colors.cyan}Create folder? (${colors.yellow}y${colors.cyan}/${colors.yellow}n${colors.cyan}): ${colors.clear}`);
 createFolder = (createFolder || '').toLowerCase();
 let shouldCreateProjectFolder = createFolder === 'y' || createFolder === 'yes';
-const source = './templates/main'
+const source = path.resolve(import.meta.dirname, './templates/main');
 let destination = process.cwd();
 let projectName
 if (shouldCreateProjectFolder) {
