@@ -1,0 +1,24 @@
+{
+  "name": "lithe-template",
+  "version": "1.0.0",
+  "description": "Lithe template repository",
+  "homepage": "https://github.com/TheWebFormula/lithe-template#readme",
+  "bugs": {
+    "url": "https://github.com/TheWebFormula/lithe-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWebFormula/lithe-template.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node build.js",
+    "build": "NODE_ENV=production node build.js"
+  },
+  "dependencies": {
+    "@thewebformula/lithe": "^0.24.0"
+  }
+}
