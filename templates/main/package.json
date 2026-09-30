@@ -19,6 +19,6 @@
     "build": "NODE_ENV=production node build.js"
   },
   "dependencies": {
-    "@thewebformula/lithe": "^0.24.0"
+    "@thewebformula/lithe": "^0.24.1"
   }
 }

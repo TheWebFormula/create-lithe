@@ -1,6 +1,6 @@
 {
   "name": "@thewebformula/create-lithe",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Lithe template repository",
   "homepage": "https://github.com/TheWebFormula/create-lithe#readme",
   "bugs": {
@@ -14,7 +14,7 @@
   "author": "",
   "type": "module",
   "dependencies": {
-    "@thewebformula/lithe": "^0.24.0"
+    "@thewebformula/lithe": "^0.24.1"
   },
   "bin": "./index.js"
 }
