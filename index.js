@@ -1,8 +1,9 @@
 import { cp } from 'node:fs/promises';
 import { fileURLToPath } from "node:url";
 import path from 'node:path';
-import fs from 'node:fs';
+import fs from 'node:fs/promises';
 import readline from 'node:readline'
+import { styleText } from 'node:util';
 
 
 
@@ -32,4 +33,4 @@ await cp(source, destination, {
 });
 
 console.log('📑  Files copied...');
-console.log(chalk.green(`\ncd ${projectName}\nnpm install\nnpm start`));
+console.log(styleText('green', `\ncd ${projectName}\nnpm install\nnpm start`));
