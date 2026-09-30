@@ -13,12 +13,12 @@
   "license": "ISC",
   "author": "",
   "type": "module",
+  "main": "app/app.js",
   "scripts": {
     "start": "node build.js",
     "build": "NODE_ENV=production node build.js"
   },
   "dependencies": {
     "@thewebformula/lithe": "^0.24.0"
-  },
-  "bin": "./index.js"
+  }
 }
