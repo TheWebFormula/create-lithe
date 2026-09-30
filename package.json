@@ -1,22 +1,18 @@
 {
-  "name": "lithe-template",
+  "name": "@thewebformula/create-lithe",
   "version": "0.1.0",
   "description": "Lithe template repository",
-  "homepage": "https://github.com/TheWebFormula/lithe-template#readme",
+  "homepage": "https://github.com/TheWebFormula/create-lithe#readme",
   "bugs": {
-    "url": "https://github.com/TheWebFormula/lithe-template/issues"
+    "url": "https://github.com/TheWebFormula/create-lithe/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheWebFormula/lithe-template.git"
+    "url": "git+https://github.com/TheWebFormula/create-lithe.git"
   },
   "license": "ISC",
   "author": "",
   "type": "module",
-  "scripts": {
-    "start": "node build.js",
-    "build": "NODE_ENV=production node build.js"
-  },
   "dependencies": {
     "@thewebformula/lithe": "^0.24.0"
   },
